@@ -32,21 +32,21 @@ const produtos = [
   ];
   
   const contarProdutos = produtos.length;   //Quantidade de produtos
-  console.log (`Seu carrinho possui um total de: ${contarProdutos} produtos.`);
+  console.log(`Seu carrinho possui um total de: ${contarProdutos} produtos.`);
 
-  const filtrarEletronicos = produtos.filter((item) => item.categoria === "Eletrônicos");
-  console.log(filtrarEletronicos);   //Total de produtos eletrônicos
+  const produtosEletronicos = produtos.filter((item) => item.categoria === "Eletrônicos");
+  console.log(produtosEletronicos);   //Total de produtos eletrônicos
 
-  const filtrarMaiorPreco = produtos.filter((item) => item.preco >= 1500);
-  console.log(filtrarMaiorPreco);   //Filtro de valor acima de 1.500
+  const produtosMaiorPreco = produtos.filter((item) => item.preco >= 1500);
+  console.log(produtosMaiorPreco);   //Filtro de valor acima de 1.500
 
-  const filtrarTitulo = produtos.filter((item) => item.titulo == "Caderno");
-  console.log(filtrarTitulo);  //Filtro por nome (Caderno)
+  const produtosPorTitulo = produtos.filter((item) => item.titulo == "Caderno");
+  console.log(produtosPorTitulo);  //Filtro por nome (Caderno)
 
-  const filtrarMenorPreco = produtos.filter ((item) => item.preco <= 1500);
-  console.log(filtrarMenorPreco); //Filtro de preços entre 10 e 1500
+  const produtosMenorPreco = produtos.filter((item) => item.preco <= 1500);
+  console.log(produtosMenorPreco); //Filtro de preços entre 10 e 1500
   
-  produtos.push = ({
+  produtos.push({
     titulo: "Jordam",
     preco: 1499.90,
     categoria: "Esportes"
