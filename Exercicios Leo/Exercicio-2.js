@@ -5,7 +5,7 @@ array.push("Abacaxi");
 array.push("Morango");
 array.push("Uva");
 
-console.log (array);
+console.log(array);
 
 const contagemArray = array.length;
 console.log(`Sua sacola possui: ${contagemArray} itens.`);

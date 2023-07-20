@@ -43,7 +43,7 @@ const produtos = [
   const produtosPorTitulo = produtos.filter((item) => item.titulo == "Caderno");
   console.log(produtosPorTitulo);  //Filtro por nome (Caderno)
 
-  const produtosMenorPreco = produtos.filter((item) => item.preco <= 1500);
+  const produtosMenorPreco = produtos.filter((item) => item.preco > 10 && item.preco < 1500);
   console.log(produtosMenorPreco); //Filtro de preços entre 10 e 1500
   
   produtos.push({
@@ -51,4 +51,4 @@ const produtos = [
     preco: 1499.90,
     categoria: "Esportes"
   }); 
-  console.log (produtos);  //Adicionado o produto (Jordam)
+  console.log(produtos);  //Adicionado o produto (Jordam)
