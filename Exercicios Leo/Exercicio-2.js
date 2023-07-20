@@ -1,10 +1,4 @@
-let array = [];
-
-array.push("Banana");
-array.push("Abacaxi");
-array.push("Morango");
-array.push("Uva");
-
+let array = ["Banana", "Abacaxi", "Morango", "Uva"];
 console.log(array);
 
 const contagemArray = array.length;

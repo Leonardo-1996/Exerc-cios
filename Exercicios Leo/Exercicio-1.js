@@ -1,5 +1,5 @@
 function tipoDoParametro(parametro){
-    console.log(typeof parametro);
+  typeof (parametro);
     }
     
     tipoDoParametro("Leonardo");
